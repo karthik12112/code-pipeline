@@ -1,6 +1,8 @@
 version: 0.2
 phases:
   install:
+    runtime-versions:
+        python
     commands:
       - apt-get update
       - apt-get install python-pip jq zip python-demjson -y
