@@ -4,11 +4,7 @@ phases:
     commands:
       - apt-get update
       - apt-get install python-pip jq zip python-demjson -y
-      - python2 -m pip install --upgrade pip
-      - python2 -m pip install boto boto3 troposphere awacs bcrypt pytz awscli --upgrade
-      - python2 -m pip install --upgrade pygithub configparser slackclient
-      - python2 -m pip install --upgrade pyflakes
-      - python2 -m pip install --upgrade pycodestyle==2.3.1
+      - python -m pip install boto boto3 troposphere awacs bcrypt pytz awscli --upgrade
   build:
     commands:
       - python test.py
